@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* main parameters */
+body {
+  background-color: var(--main-white-color);
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* Клас скрывающий элементы */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* общие классы */
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.section-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link {
+  color: var(--main-text-color);
+  text-decoration: none;
+  display: inline-block;
+  transition: color var(--animation);
+}
+.list {
+  list-style: none;
+}
+
+.picture-normalizing {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.icon-social-network {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--icon-color-one);
+  transition: fill var(--animation), background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--main-white-color);
+    background-color: var(--third-text-color);
+  }
+}
+
+.icon-social-network--color-footer {
+  fill: var(--main-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation);
+}

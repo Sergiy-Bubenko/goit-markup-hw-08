@@ -1,0 +1,29 @@
+.dignity {
+  display: flex;
+}
+
+.dignity__title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+}
+
+.dignity__paragrah {
+  margin-bottom: 0;
+  color: var(--second-text-color);
+  line-height: 1.7;
+}
+
+.dignity__items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dignity__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,22 @@
+.vip-clients__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vip-clients__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color-one);
+  border: 1px solid var(--icon-color-one);
+  border-radius: 4px;
+  transition: fill var(--animation), border var(--animation);
+
+  &:focus,
+  &:hover {
+    fill: var(--third-text-color);
+    border: 1px solid var(--third-text-color);
+  }
+}
