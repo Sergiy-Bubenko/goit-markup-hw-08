@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+// * {
+//   outline: 1px solid tomato;
+// }
+
 /* main parameters */
 body {
   background-color: var(--main-white-color);
@@ -55,11 +59,19 @@ img {
 
 /* общие классы */
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .flex-container {

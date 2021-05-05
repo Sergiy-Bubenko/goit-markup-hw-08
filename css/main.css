@@ -68,11 +68,23 @@ img {
 
 /* общие классы */
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section-container {
@@ -283,8 +295,8 @@ img {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -367,11 +379,6 @@ img {
 
 .our-team {
   background-color: var(--section-bg-color);
-}
-
-.our-team__list {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -710,13 +717,25 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 480px;
+  max-width: 450px;
   padding: 35px 40px 45px 40px;
   border-radius: 4px;
   background-color: white;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .page-modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-modal {
+    max-width: 528px;
+  }
 }
 
 .page-modal__title {
@@ -841,7 +860,7 @@ img {
   top: 2px;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 5px;
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
   display: inline-block;
@@ -850,13 +869,14 @@ img {
 }
 
 .modal-form__agreement {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1;
 }
 
 .modal-form__link {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
 /*# sourceMappingURL=main.css.map */
