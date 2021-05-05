@@ -87,6 +87,11 @@ img {
   }
 }
 
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
 .section-container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -151,6 +156,8 @@ img {
 
 .page-header__link {
   position: relative;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -171,6 +178,13 @@ img {
   color: var(--second-text-color);
 }
 
+@media screen and (min-width: 787px) and (max-width: 1199px) {
+  .page-header__link--second-color {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .page-header__link--current-page::after {
   content: '';
   position: absolute;
@@ -186,12 +200,28 @@ img {
   margin-right: 93px;
 }
 
+@media screen and (min-width: 787px) and (max-width: 1199px) {
+  .page-header__logo {
+    margin-right: 70px;
+  }
+}
+
 .page-header__contact-list {
   margin-left: auto;
 }
 
-.navigation__list {
-  display: none;
+@media screen and (min-width: 787px) and (max-width: 1199px) {
+  .page-header__contact-list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .navigation__list {
+    display: none;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -199,12 +229,19 @@ img {
 }
 
 .contact-list {
-  display: none;
   fill: var(--second-text-color);
 }
 
-.contact-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 787px) {
+  .contact-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contact-list__icon {
@@ -487,14 +524,18 @@ img {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .collection__buttons-list {
+    justify-content: center;
+  }
+}
+
 .collection__buttons-item {
   margin-top: 15px;
   margin-right: 8px;
 }
 
 .collection__list {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 480px;
 }
 
@@ -567,7 +608,7 @@ img {
   margin-bottom: 0;
   color: var(--main-white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--animation);
 }
 

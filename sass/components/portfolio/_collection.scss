@@ -4,6 +4,10 @@
   margin-top: -15px;
   margin-right: -8px;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .collection__buttons-item {
@@ -12,8 +16,6 @@
 }
 
 .collection__list {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 480px;
 
   @media screen and (min-width: 768px) {
@@ -86,7 +88,7 @@
 
   color: var(--main-white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--animation);
 }
 
