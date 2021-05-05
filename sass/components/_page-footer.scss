@@ -8,8 +8,8 @@
 }
 
 .page-footer__container {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .page-footer__title {
@@ -22,7 +22,7 @@
 
 /* address */
 .address {
-  width: 270px;
+  max-width: 270px;
 }
 
 .address__list {
@@ -51,7 +51,7 @@
 
 /* contacts */
 .contacts {
-  width: 270px;
+  max-width: 270px;
 }
 
 .contacts__list {
@@ -64,7 +64,7 @@
 
 /* form-subscription */
 .form-container {
-  width: 570px;
+  max-width: 570px;
 }
 
 .form-subscription__input {

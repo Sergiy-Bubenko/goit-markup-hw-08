@@ -1,11 +1,24 @@
 .vip-clients__list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 6;
+  }
+}
+
+.vip-clients__item {
+  height: 92px;
 }
 
 .vip-clients__link {
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

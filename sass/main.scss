@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/global';
+@import './utils/grid';
 @import './components/page-header';
 @import './components/logo';
 @import './components/buttons';
@@ -10,6 +11,6 @@
 @import './components/index/vip-clients';
 @import './components/portfolio/collection';
 @import './components/page-footer';
+@import './components/page-modal/backdrop';
 @import './components/page-modal/page-modal';
 @import './components/page-modal/modal-form';
-@import './components/page-modal/backdrop';

@@ -1,27 +1,30 @@
 .dignity {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --grid-item: 4;
+  }
 }
 
 .dignity__title {
-  margin-bottom: 10px;
+  text-align: center;
   line-height: 1.14;
+  margin-bottom: 10px;
 }
 
 .dignity__paragrah {
-  margin-bottom: 0;
+  margin-bottom: 30px;
   color: var(--second-text-color);
   line-height: 1.7;
-}
-
-.dignity__items:not(:last-child) {
-  margin-right: 30px;
 }
 
 .dignity__icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
