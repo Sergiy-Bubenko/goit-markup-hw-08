@@ -446,8 +446,34 @@ img {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url("../images/mobile/img-mod-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/img-mod-hero@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/tablet/img-tabl-hero.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("../images/desktop/img-desk-hero.jpg");
+  }
+}
+
+.hero--gradient {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .hero__title {

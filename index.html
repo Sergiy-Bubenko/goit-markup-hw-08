@@ -86,7 +86,7 @@
 
   <main>
     <!-- герой -->
-    <section class="hero">
+    <section class="hero hero--gradient">
       <div class="container">
         <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button class="button-one" type="button" data-modal-open>Заказать услугу</button>
@@ -154,19 +154,35 @@
         <ul class="list our-activity__list">
           <li class="our-activity__items">
             <div class="our-activity__container">
-              <img class="" src="./images/box0.jpg" alt="Набор програмного кода" width="370">
+
+              <picture>
+                <source srcset="./images/desktop/img-desk-13.jpg 1x, ./images/desktop/img-desk@2x-13.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <img class="" src="./images/desktop/img-desk-13.jpg" alt="Набор програмного кода" width="100%">
+              </picture>
+
               <h3 class="our-activity__picture-title">Десктопные приложения</h3>
             </div>
           </li>
           <li class="our-activity__items">
             <div class="our-activity__container">
-              <img class="" src="./images/box1.jpg" alt="Розработка ПО для смартфонов" width="370">
+              <picture>
+                <source srcset="./images/desktop/img-desk-14.jpg 1x, ./images/desktop/img-desk@2x-14.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <img class="" src="./images/desktop/img-desk-14.jpg" alt="Розработка ПО для смартфонов" width="100%">
+              </picture>
+
               <h3 class="our-activity__picture-title">Мобильные приложения</h3>
             </div>
           </li>
           <li class="our-activity__items">
             <div class="our-activity__container">
-              <img class="" src="./images/box2.jpg" alt="3D моделирование" width="370">
+              <picture>
+                <source srcset="./images/desktop/img-desk-15.jpg 1x, ./images/desktop/img-desk@2x-15.jpg 2x" type="image/jpeg"
+                  media="(min-width: 1200px)" />
+                <img class="" src="./images/desktop/img-desk-15.jpg" alt="3D моделирование" width="100%">
+              </picture>
+
               <h3 class="our-activity__picture-title">Дизайнерские решения</h3>
             </div>
           </li>
@@ -180,7 +196,16 @@
         <h2 class="main-title">Наша команда</h2>
         <ul class="list our-team__list grid">
           <li class="our-team__items grid__item">
-            <img class="" src="./images/img(0).jpg" alt="Брюнет в бордовой рубашке" width="100%">
+            <picture>
+              <source srcset="./images/desktop/img-desk.jpg 1x, ./images/desktop/img-desk@2x.jpg 2x" type="image/jpeg" 
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/img-tabl.jpg 1x, ./images/tablet/img-tabl@2x.jpg 2x" type="image/jpeg"
+                media="(min-width: 768px)" />
+                <source srcset="./images/mobile/img-mob.jpg 1x, ./images/mobile/img-mob@2x.jpg 2x" type="image/jpeg"
+                  media="(max-width: 767px)" />
+              <img class="" src="./images/mobile/img-mob.jpg" alt="Брюнет в бордовой рубашке" width="100%">
+            </picture>
+            
             <div class="our-team__name-profession">
               <h3 class="our-team__person">Игорь Демьяненко</h3>
               <p class="our-team__profession">Product Designer</p>
@@ -217,7 +242,17 @@
             </div>
           </li>
           <li class="our-team__items grid__item">
-            <img class="" src="./images/img(1).jpg" alt="Блондинка в черном пиджаке" width="100%">
+            <picture>
+              <source srcset="./images/desktop/img-desk-1.jpg 1x, ./images/desktop/img-desk@2x-1.jpg 2x" type="image/jpeg"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/img-tabl-1.jpg 1x, ./images/tablet/img-tabl@2x-1.jpg 2x" type="image/jpeg"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/img-mob-1.jpg 1x, ./images/mobile/img-mob@2x-1.jpg 2x" type="image/jpeg"
+                media="(max-width: 767px)" />
+              <img class="" src="./images/mobile/img-mob-1.jpg" alt="Брюнет в бордовой рубашке" width="100%">
+            </picture>
+
+
             <div class="our-team__name-profession">
               <h3 class="our-team__person">Ольга Репина</h3>
               <p class="our-team__profession">Frontend Developer</p>
@@ -254,7 +289,15 @@
             </div>
           </li>
           <li class="our-team__items grid__item">
-            <img class="" src="./images/img(2).jpg" alt="Брюнет в синей рубашке" width="100%">
+            <picture>
+              <source srcset="./images/desktop/img-desk-2.jpg 1x, ./images/desktop/img-desk@2x-2.jpg 2x" type="image/jpeg"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/img-tabl-2.jpg 1x, ./images/tablet/img-tabl@2x-2.jpg 2x" type="image/jpeg"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/img-mob-2.jpg 1x, ./images/mobile/img-mob@2x-2.jpg 2x" type="image/jpeg"
+                media="(max-width: 767px)" />
+              <img class="" src="./images/mobile/img-mob-2.jpg" alt="Блондинка в черном пиджаке" width="100%">
+            </picture>
             <div class="our-team__name-profession">
               <h3 class="our-team__person">Николай Тарасов</h3>
               <p class="our-team__profession">Marketing</p>
@@ -291,7 +334,15 @@
             </div>
           </li>
           <li class="our-team__items grid__item">
-            <img class="" src="./images/img(3).jpg" alt="Брюнет в черной футболке" width="100%">
+            <picture>
+              <source srcset="./images/desktop/img-desk-3.jpg 1x, ./images/desktop/img-desk@2x-3.jpg 2x" type="image/jpeg"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/img-tabl-3.jpg 1x, ./images/tablet/img-tabl@2x-3.jpg 2x" type="image/jpeg"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/img-mob-3.jpg 1x, ./images/mobile/img-mob@2x-3.jpg 2x" type="image/jpeg"
+                media="(max-width: 767px)" />
+              <img class="" src="./images/mobile/img-mob-3.jpg" alt="Брюнет в синей рубашке" width="100%">
+            </picture>
             <div class="our-team__name-profession">
               <h3 class="our-team__person">Михаил Ермаков</h3>
               <p class="our-team__profession">UI Designer</p>
