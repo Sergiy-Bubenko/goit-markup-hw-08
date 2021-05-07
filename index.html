@@ -22,6 +22,37 @@
           <a class="logo logo--height page-header__logo" href="./index.html">Web<span
               class="logo__wrapper-black">Studio</span>
           </a>
+          <!-- мобильное меню -->
+          <button class="mobile-menu__button is-open" 
+            type="button" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu-container"
+            data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-menu-open" href="./images/symbol-defs-mono.svg#icon-menu-open"></use>
+                <use class="icon-menu-close" href="./images/symbol-defs-mono.svg#icon-menu-close"></use>
+              </svg>
+          </button>
+
+          <div class="mobile-menu__container" id="mobile-menu-container" data-menu>
+            <ul class="mobile-menu__nav list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./index.html">Студия</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link-tel link" href="">+38 096 111 11 11</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link-mail link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="flex-container list">
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link" href="">Instagram</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link" href="">Twitter</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link" href="">Facebook</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link" href="">LinkedIn</a></li>
+            </ul>
+
+          </div>
+
           <ul class="navigation__list list flex-container">
             <li class="navigation__item">
               <a class="page-header__link link page-header__link--current-page" href="./index.html">Студия</a>
@@ -478,6 +509,9 @@
     </div>
   </div>
 
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
+
+  
 </body>
 </html>

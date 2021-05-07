@@ -52,10 +52,6 @@
 .collection__items {
   display: flex;
   flex-direction: column;
-  // max-width: 480px;
-  // width: 100%;
-  // margin-right: 30px;
-  // margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     --grid-item: 2;
