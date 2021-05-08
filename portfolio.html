@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
+
 <body>
   <!-- верхний бар -->
   <header class="page-header">
@@ -22,16 +23,49 @@
           <a class="logo logo--height page-header__logo" href="./index.html">Web<span
               class="logo__wrapper-black">Studio</span>
           </a>
+          <!-- мобильное меню -->
+          <button class="mobile-menu__button is-open" type="button" aria-expanded="false"
+            aria-controls="mobile-menu-container" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu-open" href="./images/symbol-defs-mono.svg#icon-menu-open"></use>
+              <use class="icon-menu-close" href="./images/symbol-defs-mono.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu__container" id="mobile-menu-container" data-menu>
+            <ul class="mobile-menu__nav list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./index.html">Студия</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link link" href="">Контакты</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__item"><a class="mobile-menu__link-tel link" href="">+38 096 111 11 11</a></li>
+              <li class="mobile-menu__item"><a class="mobile-menu__link-mail link" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="flex-container list">
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link"
+                  href="">Instagram</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link"
+                  href="">Twitter</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link"
+                  href="">Facebook</a></li>
+              <li class="mobile-menu__social-networks-item"><a class="mobile-menu__social-networks link"
+                  href="">LinkedIn</a></li>
+            </ul>
+
+          </div>
+
           <ul class="navigation__list list flex-container">
             <li class="navigation__item">
               <a class="page-header__link link" href="./index.html">Студия</a>
             </li>
-            <li class="navigation__item"><a class="page-header__link link page-header__link--current-page" href="./portfolio.html">Портфолио</a>
+            <li class="navigation__item"><a class="page-header__link link page-header__link--current-page"
+                href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation__item"><a class="page-header__link link" href="">Контакты</a></li>
           </ul>
         </nav>
-  
+
         <!-- контакты верхнего бара -->
         <ul class="contact-list page-header__contact-list list flex-container">
           <li class="contact-list__item">
@@ -74,15 +108,15 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-4.jpg 1x, ./images/desktop/img-desk@2x-4.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-4.jpg 1x, ./images/tablet/img-tabl@2x-4.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-4.jpg 1x, ./images/mobile/img-mob@2x-4.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-4.jpg" alt="Ноутбук" width="100%">
+                  <source srcset="./images/desktop/img-desk-4.jpg 1x, ./images/desktop/img-desk@2x-4.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-4.jpg 1x, ./images/tablet/img-tabl@2x-4.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-4.jpg 1x, ./images/mobile/img-mob@2x-4.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-4.jpg" alt="Ноутбук" width="450">
                 </picture>
-                 <p class="collection__projects-details">Технокряк это современная площадка распространения коронавируса.
+                <p class="collection__projects-details">Технокряк это современная площадка распространения коронавируса.
                   Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -97,15 +131,15 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-5.jpg 1x, ./images/desktop/img-desk@2x-5.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-5.jpg 1x, ./images/tablet/img-tabl@2x-5.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-5.jpg 1x, ./images/mobile/img-mob@2x-5.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-5.jpg" alt="Два баскетболиста играют" width="100%">
+                  <source srcset="./images/desktop/img-desk-5.jpg 1x, ./images/desktop/img-desk@2x-5.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-5.jpg 1x, ./images/tablet/img-tabl@2x-5.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-5.jpg 1x, ./images/mobile/img-mob@2x-5.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-5.jpg" alt="Два баскетболиста играют" width="450">
                 </picture>
-               
+
                 <p class="collection__projects-details">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi sunt ex, tempore aspernatur
                   incidunt animi non
@@ -121,13 +155,14 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-6.jpg 1x, ./images/desktop/img-desk@2x-6.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-6.jpg 1x, ./images/tablet/img-tabl@2x-6.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-6.jpg 1x, ./images/mobile/img-mob@2x-6.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-6.jpg" alt="Название ресторана на фоне емблемы в форме рыбы" width="100%">
+                  <source srcset="./images/desktop/img-desk-6.jpg 1x, ./images/desktop/img-desk@2x-6.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-6.jpg 1x, ./images/tablet/img-tabl@2x-6.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-6.jpg 1x, ./images/mobile/img-mob@2x-6.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-6.jpg"
+                    alt="Название ресторана на фоне емблемы в форме рыбы" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -145,13 +180,13 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-7.jpg 1x, ./images/desktop/img-desk@2x-7.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-7.jpg 1x, ./images/tablet/img-tabl@2x-7.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-7.jpg 1x, ./images/mobile/img-mob@2x-7.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-7.jpg" alt="Накладные наушники" width="100%">
+                  <source srcset="./images/desktop/img-desk-7.jpg 1x, ./images/desktop/img-desk@2x-7.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-7.jpg 1x, ./images/tablet/img-tabl@2x-7.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-7.jpg 1x, ./images/mobile/img-mob@2x-7.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-7.jpg" alt="Накладные наушники" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -169,13 +204,14 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-8.jpg 1x, ./images/desktop/img-desk@2x-8.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-8.jpg 1x, ./images/tablet/img-tabl@2x-8.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-8.jpg 1x, ./images/mobile/img-mob@2x-8.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-8.jpg" alt="Две коробки, одна коричневая, вторая вдвое больше по розмеру и белого цвета" width="100%">
+                  <source srcset="./images/desktop/img-desk-8.jpg 1x, ./images/desktop/img-desk@2x-8.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-8.jpg 1x, ./images/tablet/img-tabl@2x-8.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-8.jpg 1x, ./images/mobile/img-mob@2x-8.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-8.jpg"
+                    alt="Две коробки, одна коричневая, вторая вдвое больше по розмеру и белого цвета" width="450">
                 </picture>
                 <p class="collection__projects-details">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi sunt ex, tempore aspernatur
@@ -192,13 +228,13 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-9.jpg 1x, ./images/desktop/img-desk@2x-9.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-9.jpg 1x, ./images/tablet/img-tabl@2x-9.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-9.jpg 1x, ./images/mobile/img-mob@2x-9.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-9.jpg" alt="Монитор персонального компютера" width="100%">
+                  <source srcset="./images/desktop/img-desk-9.jpg 1x, ./images/desktop/img-desk@2x-9.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-9.jpg 1x, ./images/tablet/img-tabl@2x-9.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-9.jpg 1x, ./images/mobile/img-mob@2x-9.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-9.jpg" alt="Монитор персонального компютера" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -216,13 +252,13 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-10.jpg 1x, ./images/desktop/img-desk@2x-10.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-10.jpg 1x, ./images/tablet/img-tabl@2x-10.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-10.jpg 1x, ./images/mobile/img-mob@2x-10.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-10.jpg" alt="Раскрытая книга" width="100%">
+                  <source srcset="./images/desktop/img-desk-10.jpg 1x, ./images/desktop/img-desk@2x-10.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-10.jpg 1x, ./images/tablet/img-tabl@2x-10.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-10.jpg 1x, ./images/mobile/img-mob@2x-10.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-10.jpg" alt="Раскрытая книга" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -240,13 +276,13 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-11.jpg 1x, ./images/desktop/img-desk@2x-11.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-11.jpg 1x, ./images/tablet/img-tabl@2x-11.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-11.jpg 1x, ./images/mobile/img-mob@2x-11.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-11.jpg" alt="Бирка на веревке" width="100%">
+                  <source srcset="./images/desktop/img-desk-11.jpg 1x, ./images/desktop/img-desk@2x-11.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-11.jpg 1x, ./images/tablet/img-tabl@2x-11.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-11.jpg 1x, ./images/mobile/img-mob@2x-11.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-11.jpg" alt="Бирка на веревке" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -264,13 +300,13 @@
             <a class="link collection__link" href="">
               <div class="collection__projects-container">
                 <picture>
-                  <source srcset="./images/desktop/img-desk-12.jpg 1x, ./images/desktop/img-desk@2x-12.jpg 2x" type="image/jpeg"
-                    media="(min-width: 1200px)" />
-                  <source srcset="./images/tablet/img-tabl-12.jpg 1x, ./images/tablet/img-tabl@2x-12.jpg 2x" type="image/jpeg"
-                    media="(min-width: 768px)" />
-                  <source srcset="./images/mobile/img-mob-12.jpg 1x, ./images/mobile/img-mob@2x-12.jpg 2x" type="image/jpeg"
-                    media="(max-width: 767px)" />
-                  <img class="" src="./images/mobile/img-mob-12.jpg" alt="Ноутбук" width="100%">
+                  <source srcset="./images/desktop/img-desk-12.jpg 1x, ./images/desktop/img-desk@2x-12.jpg 2x"
+                    type="image/jpeg" media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet/img-tabl-12.jpg 1x, ./images/tablet/img-tabl@2x-12.jpg 2x"
+                    type="image/jpeg" media="(min-width: 768px)" />
+                  <source srcset="./images/mobile/img-mob-12.jpg 1x, ./images/mobile/img-mob@2x-12.jpg 2x"
+                    type="image/jpeg" media="(max-width: 767px)" />
+                  <img class="" src="./images/mobile/img-mob-12.jpg" alt="Ноутбук" width="450">
                 </picture>
 
                 <p class="collection__projects-details">
@@ -292,50 +328,53 @@
   <!-- подвал -->
   <footer class="page-footer">
     <div class="container">
+
       <div class="page-footer__container">
-        <address class="address">
-          <a class="logo" href="./index.html">Web<span class="logo__wrapper-white">Studio</span></a>
-          <ul class="address__list list">
-            <li><a class=" link address__link address__link--color-white" href="">г. Киев, пр-т Леси Украинки, 26</a>
-            </li>
-            <li class="address__item"><a class="link address__link"
-                href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li><a class="link address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-        <div class="contacts">
-          <h3 class="page-footer__title">присоединяйтесь</h3>
-          <ul class="list contacts__list">
-            <li class="contact__item">
-              <a class="icon-social-network icon-social-network--color-footer" href="">
-                <svg class="" width="20" height="20">
-                  <use href="./images/symbol-defs-mono.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="icon-social-network icon-social-network--color-footer" href="">
-                <svg class="" width="20" height="20">
-                  <use href="./images/symbol-defs-mono.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="icon-social-network icon-social-network--color-footer" href="">
-                <svg class="" width="20" height="20">
-                  <use class="" href="./images/symbol-defs-mono.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="contact__item">
-              <a class="icon-social-network icon-social-network--color-footer" href="">
-                <svg class="" width="20" height="20">
-                  <use href="./images/symbol-defs-mono.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="address-contact-container">
+          <address class="address">
+            <a class="logo" href="./index.html">Web<span class="logo__wrapper-white">Studio</span></a>
+            <ul class="address__list list">
+              <li><a class=" link address__link address__link--color-white" href="">г. Киев, пр-т Леси Украинки, 26</a>
+              </li>
+              <li class="address__item"><a class="link address__link"
+                  href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li><a class="link address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+          <div class="contacts">
+            <h3 class="page-footer__title">присоединяйтесь</h3>
+            <ul class="list contacts__list">
+              <li class="contact__item">
+                <a class="icon-social-network icon-social-network--color-footer" href="">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/symbol-defs-mono.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="icon-social-network icon-social-network--color-footer" href="">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/symbol-defs-mono.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="icon-social-network icon-social-network--color-footer" href="">
+                  <svg class="" width="20" height="20">
+                    <use class="" href="./images/symbol-defs-mono.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="icon-social-network icon-social-network--color-footer" href="">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/symbol-defs-mono.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="form-container">
           <h3 class="page-footer__title">Подпишитесь на рассылку</h3>
@@ -354,5 +393,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/mobile-menu.js"></script>
+
 </body>
+
 </html>

@@ -1,4 +1,5 @@
 .page-footer {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -8,8 +9,10 @@
 }
 
 .page-footer__container {
-  // display: flex;
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__title {
@@ -23,6 +26,10 @@
 /* address */
 .address {
   max-width: 270px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .address__list {
@@ -49,13 +56,39 @@
   margin-bottom: 9px;
 }
 
+.address-contact-container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 /* contacts */
 .contacts {
   max-width: 270px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 90px;
+  }
 }
 
 .contacts__list {
   display: flex;
+  justify-content: center;
 }
 
 .contact__item:not(:last-child) {
@@ -65,13 +98,20 @@
 /* form-subscription */
 .form-container {
   max-width: 570px;
+  width: 100%;
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-subscription__input {
-  width: calc(100% - 216px);
+  // display: block;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -80,6 +120,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 360px;
+    width: calc(100% - 216px);
   }
 }
 
