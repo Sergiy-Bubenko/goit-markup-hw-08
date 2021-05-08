@@ -1,11 +1,14 @@
 .page-footer {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .page-footer__container {
@@ -81,7 +84,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 85px;
     margin-right: 90px;
   }
 }
@@ -125,6 +128,7 @@
   @media screen and (min-width: 1200px) {
     max-width: 360px;
     width: calc(100% - 216px);
+    margin-right: 8px;
   }
 }
 

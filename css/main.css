@@ -298,7 +298,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 48px 40px;
   background-color: var(--main-white-color);
@@ -813,13 +813,18 @@ img {
 }
 
 .page-footer {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .page-footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -903,7 +908,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts {
-    margin-left: 70px;
+    margin-left: 85px;
     margin-right: 90px;
   }
 }
@@ -951,6 +956,7 @@ img {
   .form-subscription__input {
     max-width: 360px;
     width: calc(100% - 216px);
+    margin-right: 8px;
   }
 }
 
